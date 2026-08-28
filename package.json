@@ -1,0 +1,21 @@
+{
+  "name": "saucedemo-playwright-suite",
+  "version": "1.0.0",
+  "description": "Playwright + TypeScript automation suite for the SauceDemo e-commerce user journey",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:parallel": "playwright test --workers=4",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.4"
+  }
+}
